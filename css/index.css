@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    *background: radial-gradient(circle, rgba(0,255,16,1) 0%, rgba(49,88,24,1) 100%);
+    background: radial-gradient(circle, rgba(0,206,255,1) 0%, rgba(24,28,88,1) 100%);
+    *background: #f3f3f3;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background: rgb(109, 128, 112);
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #27332a;
+    *border-radius: 5px;
+    transition: 0,4s;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background: #1c4727;
+}
+
+a {
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+ul{
+    text-decoration: none;
+}
+
+/*cabesera*/
+header{
+    background: rgba(0, 0, 0, 20%);
+    *background-image: linear-gradient(to top, #9be15d 0%, #00e339 100%);;
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 10px 0 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around ;
+    align-items: center;
+}
+
+header nav .port{
+    background-color: white;
+    width: 3px;
+    height: 10px;
+}
+
+header div{
+    *background: chocolate;
+    width: 35%;
+    margin-right: 180px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header div img{
+    width: 20%;
+    border-radius: 50%;
+    *box-shadow: 5px 5px rgba(0, 0, 0, 25%);
+}
+
+header div h1{
+    color: white;
+    font-size: 260%;
+    font-family: "varela round";
+    font-weight: 9000;
+    *text-shadow: 10px 10px rgba(0, 0, 0, 25%);
+}
+
+header nav{
+    *background: cornflowerblue;
+    width: 45%;
+    height: 30px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a{
+    *background: #1c4727;
+    color: white;
+    font-size: 120%;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+header nav a:hover{
+    background: rgba(0, 0, 0, 35%);
+}
+
+header nav > ul {
+    *background: yellow;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+header #contain a{
+    *background: chocolate;
+    color: white;
+    *margin-bottom: 10px;
+    text-align: left;
+    font-size: 105%;
+    *padding: 10px 5px;
+}
+
+header nav #contain{
+    background:rgba(0, 0, 0, 55%);
+    backdrop-filter: blur(1px);
+    display: none;
+    position:fixed;
+    top: 50px;
+    right: 100px;
+    width: 140px;
+    height: auto;
+    min-height: 120px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    transition:ease-out;
+    *display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+    align-items:center ;
+    gap: 8px;  
+}
+
+header #contain a:hover{
+    font-size: 110%;
+    text-decoration:overline ;
+    background: none;
+}
+
+header nav ul #more:hover ~ #contain{
+    display:flex;
+}
+
+/*PRIMERA PARTE*/
+#firts{
+    *background: violet;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+}
+
+#firts i{
+    font-size: 1000%;
+    color: rgb(0, 0, 0);
+}
+
+#firts h2{
+    font-size: 250%;
+    background-color: yellow;
+    width: 35%;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Anybody', cursive;
+    border-radius: 50% 0 50% 0;
+    padding: 5px 0 5px 0;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 35%);
+}
+
+
+
+#firts p{
+    color:white;
+    *background: rgba(0, 0, 0, 35%);
+    box-shadow:  0 5px 5px 5px rgba(0, 0, 0, 35%);
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 15px 8px;
+    border-radius: 15px;
+    font-size: 110%;
+    font-weight: 400;
+}
+
+/*secont part*/
+#secont{
+    *background-color: #00e339;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ /*titulo cool*/
+#secont .apart-title{
+    *background-color: aquamarine;
+    min-width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:5%;
+    margin-bottom: 10px;
+}
+
+#secont .apart-title .line{
+    background: white;
+    width: 60%;
+    height: 4px;
+    border-radius: 20px;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 35%);
+}
+
+#secont .apart-title h3{
+    background-color: yellow;
+    width: 35%;
+    text-align: center;
+    font-family: 'Anybody', cursive;
+    font-size: 130%;
+    border-radius: 0 50% 0 50%;
+    padding: 5px 0 5px 0;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 35%);
+}
+
+#secont .conosimiento:first-of-type{
+    margin-top: 20px;
+}
+
+#secont .conosimiento{
+    *background-color: aqua;
+    background: radial-gradient(circle, rgba(0,249,255,1) 20%, rgb(2, 148, 148) 100%);
+    width: 70%;
+    min-height: 100px;
+    height: auto;
+    margin-bottom: 15px;
+    padding: 20px 10px;
+    border-radius: 15px;
+    box-shadow: 8px 8px rgba(0, 0, 0, 35%);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#secont .conosimiento p{
+    *background: #00e339;
+    width: 70%;
+    font-weight: 525;
+    font-size: 110%;
+}
+
+#secont .conosimiento div{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#secont .conosimiento div img{
+    width: 100px;
+    padding: 5px;
+    margin-top: 10px;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 35%);
+    border-radius: 15px;
+}
+
+/*final pie*/
+footer{
+    color: white;
+    background: #1c3047;
+    width: 100%;
+    height: 150px;
+    margin-top: 50px;
+    padding: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+footer article{
+    *background: #00e339;
+    width: 50%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer article h3{
+    font-size: 125%;
+}
+
+footer article a{
+    font-size: 120%;
+    width: 50%;
+    height: 25px;
+    padding: 8px 0;
+    color: grey;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+footer article a:hover{
+    font-size: 130%;
+    background: rgba(0, 0, 0, 65%);
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 25%);
+}
+
