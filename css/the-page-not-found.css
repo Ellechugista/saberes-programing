@@ -64,8 +64,8 @@ header nav .port{
 
 header div{
     *background: chocolate;
-    width: 35%;
-    margin-right: 180px;
+    width: 40%;
+    *margin-right: 180px;
 
     display: flex;
     align-items: center;
@@ -177,22 +177,16 @@ header nav #space-important:hover{
     background: rgba(0, 0, 0, 35%);
 }
 
-/*PRIMERA PARTE*/
+/*primera parte*/
+
 #firts{
-    *background: violet;
     width: 100%;
-    padding: 10px 0;
-    margin-bottom: 60px;
 
     display: flex;
     flex-direction: column;
-    align-items:center ;
+    align-items: center;
     justify-content: center;
-}
-
-#firts i{
-    font-size: 1000%;
-    color: rgb(0, 0, 0);
+    gap: 50px;
 }
 
 #firts h2{
@@ -207,105 +201,35 @@ header nav #space-important:hover{
     box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 35%);
 }
 
+#firts img{
+    width: 50%;
+
+}
 
 
 #firts p{
-    color:white;
-    *background: rgba(0, 0, 0, 35%);
-    box-shadow:  0 5px 5px 5px rgba(0, 0, 0, 35%);
-    width: 50%;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding: 15px 8px;
-    border-radius: 15px;
-    font-size: 110%;
-    font-weight: 400;
-}
-
-/*secont part*/
-#secont{
-    *background-color: #00e339;
-    width: 100%;
-    height: auto;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
- /*titulo cool*/
-#secont .apart-title{
-    *background-color: aquamarine;
-    min-width: 75%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap:5%;
-    margin-bottom: 10px;
-}
-
-#secont .apart-title .line{
-    background: white;
-    width: 60%;
-    height: 4px;
-    border-radius: 20px;
-    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 35%);
-}
-
-#secont .apart-title h3{
-    background-color: yellow;
-    width: 35%;
+    font-size: 180%;
+    font-weight: 600;
+    width: 70%;
     text-align: center;
-    font-family: 'Anybody', cursive;
-    font-size: 130%;
-    border-radius: 0 50% 0 50%;
-    padding: 5px 0 5px 0;
-    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 35%);
 }
 
-#secont .conosimiento:first-of-type{
-    margin-top: 20px;
+#firts a{
+    font-size: 140%;
+    text-align:center;
+    font-weight: 600;
+    color: white;
+    padding-top: 8px;
+    width: 15%;
+    height: 35px;
+    border-radius: 20px;
+    transition: 0.5s;
+
 }
 
-#secont .conosimiento{
-    *background-color: aqua;
-    background: radial-gradient(circle, rgba(0,249,255,1) 20%, rgb(2, 148, 148) 100%);
-    width: 70%;
-    min-height: 100px;
-    height: auto;
-    margin-bottom: 15px;
-    padding: 20px 10px;
-    border-radius: 15px;
-    box-shadow: 8px 8px rgba(0, 0, 0, 35%);
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#secont .conosimiento p{
-    *background: #00e339;
-    width: 70%;
-    font-weight: 525;
-    font-size: 110%;
-}
-
-#secont .conosimiento div{
-    display: flex;
-    width: auto;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#secont .conosimiento div img{
-    width: 100px;
-    padding: 5px;
-    margin-top: 10px;
-    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 35%);
-    border-radius: 15px;
+#firts a:hover{
+    background: rgba(30, 255, 1, 0.555);
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 55%);
 }
 
 /*final pie*/
