@@ -305,3 +305,54 @@ header nav #space-important:hover{
     *background-color: rgba(0, 0, 0, 35%);
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 20%);
 }
+
+
+
+
+
+/*final pie*/
+footer{
+    color: white;
+    background: #1c3047;
+    width: 100%;
+    height: 150px;
+    margin-top: 50px;
+    padding: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+footer article{
+    *background: #00e339;
+    width: 50%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer article h3{
+    font-size: 125%;
+}
+
+footer article a{
+    font-size: 120%;
+    width: 50%;
+    height: 25px;
+    padding: 8px 0;
+    color: grey;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+footer article a:hover{
+    font-size: 130%;
+    background: rgba(0, 0, 0, 65%);
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 25%);
+}
+
