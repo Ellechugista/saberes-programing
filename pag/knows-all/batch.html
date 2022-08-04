@@ -64,7 +64,7 @@
             <article id="conseptos">
                 <div class="consepto">
                     <h3>Batch</h3>
-                    <p>Para entender este concepto piense en un archivo bat como un script (una serie de pasos que tiene que cumplir el ordenador o en este caso la terminal), sabiendo esto, serás tu quien controle o dirija y maneje el flujo de procesos(el flujo de los pasos), para que el terminal cumpla debidamente con estos pasos es importante saber la sintaxis del lenguaje (piensa en la sintaxis del lenguaje como un idioma y sus respectivas reglas), si esta sintaxis está mal escrita el script no se ejecutara o tu cadena de pasos se romperá(si un paso está mal escrito no continuara con el siguiente paso generando error). El lenguaje Batch imagínalo como una cadena de pasos, cada uno de estos debe tener relación o uso con el anterior o siguiente, sabiendo esto ya puedes iniciar la primera parte de la sintaxis Batch.</p>
+                    <p>Para entender este concepto piense en un archivo bat como un script (una serie de pasos que tiene que cumplir el ordenador o en este caso la terminal), sabiendo esto, serás tu quien controle o dirija y maneje el flujo de procesos(el flujo de los pasos), para que el terminal cumpla debidamente con estos pasos es importante saber la sintaxis del lenguaje (piensa en la sintaxis del lenguaje como un idioma y sus respectivas reglas), si esta sintaxis está mal escrita el script no se ejecutara o tu cadena de pasos se romperá(si un paso está mal escrito no continuara con el siguiente paso generando error). El lenguaje Batch imagínalo como una cadena de pasos, cada uno de estos debe tener relación o uso con el anterior o siguiente paso, sabiendo esto ya puedes iniciar la primera parte de la sintaxis Batch.</p>
 
                     <a href="">¡VAMOS!</a>
                 </div>
@@ -85,9 +85,108 @@
                     <a href="">¡VAMOS!</a>
                 </div>
 
+                <div class="separador"></div>
+
+                <div class="consepto">
+                    <h3>¡ACCIONES!</h3>
+                    <p>Con batch puedes hacer lo que te propongas desde virus que eliminen sistem 32 a abrir aplicasiones, modificar datos de aplicasiones e incluso organizar tus archivos. Esta es una herramienta muy util en cuanto a la manipulacion de archivos y registros de windows, por ello es muy importante que sepas que es lo quehace una linea de codigo antes de ejecutarla, pues puedes dañar tu sistema operativo o perder todos tus datos. sabiendo esto puedes avanzar a la parte de sintaxis avanzada</p>
+                    <a href="batch/sintaxis.html #avanzado">Sintaxis A</a>
+                </div>
             </article>
+        </section>
 
+        <section id="secont">
+            <article id="sintaxis1">
+                <div class="sintaxis">
+                    <h3>Comandos base</h3>
+                    <p>estos son los comandos necesarios para la terminal de cmd mustre en pantalla texto y mas... </p>
+                    <ul>
+                        <li> <b>pause y pause/nul</b> <br>
+                            este comando pausa la ejecusion y pause/nul pause la secuencia 1 vez.
+                        </li>
+                        <li>
+                            <b>cls</b> <br>
+                            este comando limpia todo el texto anteriormente generado por el terminal.
+                        </li>
+                        <li>
+                            <b>echo</b> <br>
+                            este sirbe para generar texto en el terminal(echo hola mundo)
+                        </li>
+                        <li>
+                            <b>echo.</b> <br>
+                            este es un salto de linea osea dejara un espasio en el terminal
+                        </li>
+                    </ul>
+                    <img src="" alt="">
+                </div>
+                <div class="sintaxis">
+                    <h3>Variables</h3>
+                    <p>para declarar las variables deveras escribir el comando que la crea y luego el nombre de si separandola con un espacio.</p>
+                    <ul>
+                        <li><b>set</b><br>
+                            comando basico para generar una variable que no se mostrara ni sera modificada por el usuario.
+                        </li>
+                        <li><b>set/p</b><br>
+                            variable que sera ingresada por el usuario
+                        </li>
+                        <li><b>set/a</b><br>
+                            variable que se puede ser operada por simbolos matematicos.
+                        </li>
+                        <li><b>para llamar una variable</b><br>
+                            PARA HACER LLAMADO A UNA VARIABLE ESCRIBIMOS EL NOMBRE ENTRE %nombre%
+                        </li>
+                    </ul>
+                </div>
+                <div class="sintaxis">
+                    <h3>Condicionales</h3>
+                    <p>aqui se pone bueno pues resulta que puedes creear una secuensia de pasos y llamarla dentro de un script batch, como una funsion, en donde tu le das unos valores y sale un producto, para ello usaremos el comando goto.</p>
+                    <ul>
+                        <li><b>if</b><br>
+                            este sirve para dar condicion a una variable
+                            (eje) if %NUMERO%==condiciondada echo la echasta bien pepo</li>
+                        <li><b>clases de condicional</b>
+                            <li>== (este funciona para expresar que solo si es total mente igual)</li>
+                            <li>LSS (si la variable es menor al valor dado)</li>
+                            <li>GTR (si la variable es myor quel numero daddo)</li>
+                            <li>LEQ (si la variable es menor o igual a numero dado)</li>
+                            <li>GEQ (SI LA VARIABLE ES MAYOR A IGUAL A NUMERO DADO)</li>
+                        </li>
+                        <li><b>else</b><br>
+                            este comando funciona para deciri la ccion si no se cumple  la condicion de if
+                        </li>
+                        <li>
+                            <b>goto</b><br>
+                            esta sirve para dar una etiketa o clasificacion a un devido proseso. (eje) para crearlo se escribe goto nombre de la etiketa y para anunciarlo :nombre del goto.
+                        </li>
+                    </ul>
+                </div>
+                <div class="sintaxis">
+                    <h3>interaccion con cmd</h3>
+                    <p>esto es para cambiar espectos de la ventana de cmd.</p>
 
+                    <b>color</b><br>
+                    este comando sirve para interactuar con la interfas del cmd el primer simbolo indica el fondo y el segundo el color de las letras.
+                    <ul>
+                        <li>A = Verde claro</li>
+                        <li>B = Aguamarina claro</li>
+                        <li>C = Rojo claro</li>
+                        <li>D = Púrpura claro</li>
+                        <li>E = Amarillo claro</li>
+                        <li>F = Blanco brillante</li>
+                        <li>0 = Negro</li>
+                        <li>1 = Azul</li>
+                        <li>2 = Verde</li>
+                        <li>3 = Aguamarina</li>
+                        <li>4 = Rojo</li>
+                        <li>5 = Púrpura</li>
+                        <li>6 = Amarillo</li>
+                        <li>7 = Blanco</li>
+                        <li>8 = Gris</li>
+                        <li>9 = Azul claro</li>
+                    </ul>
+                </div>
+
+            </article>
         </section>
 
         <footer>
