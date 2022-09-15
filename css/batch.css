@@ -12,6 +12,9 @@ body{
     background: radial-gradient(circle, rgba(0,206,255,1) 0%, rgba(24,28,88,1) 100%);
     *background: #f3f3f3;
 }
+p::first-letter{
+    text-transform: capitalize;
+}
 
 html{
     scroll-behavior: smooth;
@@ -191,6 +194,8 @@ header nav #space-important:hover{
     color: white;
 }
 
+/*primera parte conseptos*/
+
 #firts {
     width: 100%;
     *background-color: #00e339;
@@ -306,7 +311,76 @@ header nav #space-important:hover{
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 20%);
 }
 
-#secont
+/*segunda parte sintaxis*/
+#secont {
+    width: 100%;
+    *background-color: #00e339;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#secont article{
+    width: 60%;
+    *background-color: #1c4727;
+    background-color: rgba(0, 0, 0, 55%);
+    padding: 20px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 10px rgba(0, 0, 0, 25%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ article .sintaxis{
+    width: 90%;
+    padding-bottom: 30px;
+    padding-top: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    
+}
+
+ article .sintaxis h3{
+    color: white;
+    font-size: 150%;
+    font-family: "anybody";
+    *text-align: center;
+}
+
+ article .sintaxis p {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+ article .sintaxis b{
+    color: white;
+    font-weight: 600;
+    font-family: "varela round";
+}
+
+ article .sintaxis ul{
+    width: 80%;
+}
+
+ article .sintaxis li{
+    color: rgb(196, 196, 196);
+    margin-bottom: 5px;
+}
+
+
 
 
 

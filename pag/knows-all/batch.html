@@ -66,7 +66,7 @@
                     <h3>Batch</h3>
                     <p>Para entender este concepto piense en un archivo bat como un script (una serie de pasos que tiene que cumplir el ordenador o en este caso la terminal), sabiendo esto, serás tu quien controle o dirija y maneje el flujo de procesos(el flujo de los pasos), para que el terminal cumpla debidamente con estos pasos es importante saber la sintaxis del lenguaje (piensa en la sintaxis del lenguaje como un idioma y sus respectivas reglas), si esta sintaxis está mal escrita el script no se ejecutara o tu cadena de pasos se romperá(si un paso está mal escrito no continuara con el siguiente paso generando error). El lenguaje Batch imagínalo como una cadena de pasos, cada uno de estos debe tener relación o uso con el anterior o siguiente paso, sabiendo esto ya puedes iniciar la primera parte de la sintaxis Batch.</p>
 
-                    <a href="">¡VAMOS!</a>
+                    <a href="#sintaxis1">¡VAMOS!</a>
                 </div>
 
                 <div class="separador"></div> 
@@ -74,7 +74,7 @@
                 <div class="consepto">
                     <h3 id="variables">Variable</h3>
                     <p>La variable es un valor indefinido y cambiante si así lo declara uno, puedes pensar en la variable como una caja, en ella tú decides si van a ir naranjas, limones, etc... entonces en esta caja si decides que vallan limones no podrás meter naranjas y así consecutivamente, estas variables en vez de naranjas o limones llevaran números y valores operables por otras variables o incluso otros valores(ya definidos como números naturales), en Batch, podrás jugar de muchas formas con ellos, sabiendo esto ya puedes ir a la segunda parte de variabilidad. </p>
-                    <a href="">¡VAMOS!</a>
+                    <a href="#variable">¡VAMOS!</a>
                 </div>
 
                 <div class="separador"></div>
@@ -82,7 +82,7 @@
                 <div class="consepto">
                     <h3 id="condicionales">Condiciones</h3>
                     <p>Las condicionales son eso, condiciones que le das al flujo de procesos, para que cuando se cumpla con una condicional haga el proceso A o si no el proceso B, con estos puedes hacer contraseñas, bucles y demás, sabiendo esto ya puedes avanzar con la parte de condicionalidad.</p>
-                    <a href="">¡VAMOS!</a>
+                    <a href="#condicional">¡VAMOS!</a>
                 </div>
 
                 <div class="separador"></div>
@@ -90,7 +90,7 @@
                 <div class="consepto">
                     <h3>¡ACCIONES!</h3>
                     <p>Con batch puedes hacer lo que te propongas desde virus que eliminen sistem 32 a abrir aplicasiones, modificar datos de aplicasiones e incluso organizar tus archivos. Esta es una herramienta muy util en cuanto a la manipulacion de archivos y registros de windows, por ello es muy importante que sepas que es lo quehace una linea de codigo antes de ejecutarla, pues puedes dañar tu sistema operativo o perder todos tus datos. sabiendo esto puedes avanzar a la parte de sintaxis avanzada</p>
-                    <a href="batch/sintaxis.html #avanzado">Sintaxis A</a>
+                    <a href="#avanzado">Sintaxis A</a>
                 </div>
             </article>
         </section>
@@ -101,72 +101,85 @@
                     <h3>Comandos base</h3>
                     <p>estos son los comandos necesarios para la terminal de cmd mustre en pantalla texto y mas... </p>
                     <ul>
-                        <li> <b>pause y pause/nul</b> <br>
-                            este comando pausa la ejecusion y pause/nul pause la secuencia 1 vez.
+                        <li><i class="fas fa-wrench"></i> <b>pause y pause/nul</b> <br>
+                            Este comando pausa la ejecusion y pause/nul pause la secuencia 1 vez.
                         </li>
                         <li>
-                            <b>cls</b> <br>
-                            este comando limpia todo el texto anteriormente generado por el terminal.
+                            <i class="fas fa-wrench"></i> <b>cls</b> <br>
+                            Este comando limpia todo el texto anteriormente generado por el terminal.
                         </li>
                         <li>
-                            <b>echo</b> <br>
-                            este sirbe para generar texto en el terminal(echo hola mundo)
+                            <i class="fas fa-wrench"></i> <b>echo</b> <br>
+                            Este sirbe para generar texto en el terminal(echo hola mundo)
                         </li>
                         <li>
-                            <b>echo.</b> <br>
+                            <i class="fas fa-wrench"></i> <b>echo.</b> <br>
                             este es un salto de linea osea dejara un espasio en el terminal
                         </li>
                     </ul>
                     <img src="" alt="">
                 </div>
-                <div class="sintaxis">
+
+                <div class="separador"></div> 
+
+                <div class="sintaxis" id="variable">
                     <h3>Variables</h3>
                     <p>para declarar las variables deveras escribir el comando que la crea y luego el nombre de si separandola con un espacio.</p>
                     <ul>
-                        <li><b>set</b><br>
-                            comando basico para generar una variable que no se mostrara ni sera modificada por el usuario.
+                        <li><i class="fas fa-wrench"></i> <b>set</b><br>
+                            Comando basico para generar una variable que no se mostrara ni sera modificada por el usuario.
                         </li>
-                        <li><b>set/p</b><br>
-                            variable que sera ingresada por el usuario
+                        <li><i class="fas fa-wrench"></i> <b>set/p</b><br>
+                            Variable que sera ingresada por el usuario
                         </li>
-                        <li><b>set/a</b><br>
-                            variable que se puede ser operada por simbolos matematicos.
+                        <li><i class="fas fa-wrench"></i> <b>set/a</b><br>
+                            Variable que se puede ser operada por simbolos matematicos.
                         </li>
-                        <li><b>para llamar una variable</b><br>
+                        <li><i class="fas fa-wrench"></i> <b>para llamar una variable</b><br>
                             PARA HACER LLAMADO A UNA VARIABLE ESCRIBIMOS EL NOMBRE ENTRE %nombre%
                         </li>
                     </ul>
                 </div>
-                <div class="sintaxis">
+
+                <div class="separador"></div> 
+
+                <div class="sintaxis" id="condicional">
                     <h3>Condicionales</h3>
                     <p>aqui se pone bueno pues resulta que puedes creear una secuensia de pasos y llamarla dentro de un script batch, como una funsion, en donde tu le das unos valores y sale un producto, para ello usaremos el comando goto.</p>
                     <ul>
-                        <li><b>if</b><br>
-                            este sirve para dar condicion a una variable
+                        <li><i class="fas fa-wrench"></i> <b>if</b><br>
+                            este sirve para dar condicion a una variable <br>
                             (eje) if %NUMERO%==condiciondada echo la echasta bien pepo</li>
-                        <li><b>clases de condicional</b>
+                        <li><i class="fas fa-wrench"></i> <b>clases de condicional:</b>
                             <li>== (este funciona para expresar que solo si es total mente igual)</li>
                             <li>LSS (si la variable es menor al valor dado)</li>
                             <li>GTR (si la variable es myor quel numero daddo)</li>
                             <li>LEQ (si la variable es menor o igual a numero dado)</li>
                             <li>GEQ (SI LA VARIABLE ES MAYOR A IGUAL A NUMERO DADO)</li>
                         </li>
-                        <li><b>else</b><br>
+                        <li><i class="fas fa-wrench"></i> <b>else</b><br>
                             este comando funciona para deciri la ccion si no se cumple  la condicion de if
                         </li>
                         <li>
-                            <b>goto</b><br>
-                            esta sirve para dar una etiketa o clasificacion a un devido proseso. (eje) para crearlo se escribe goto nombre de la etiketa y para anunciarlo :nombre del goto.
+                            <i class="fas fa-wrench"></i> <b>goto</b><br>
+                            esta sirve para dar una etiketa o clasificacion a un devido proseso. <br>(eje) para crearlo se escribe goto nombre de la etiketa y para anunciarlo :nombre del goto.
                         </li>
                     </ul>
                 </div>
+
+                <div class="separador"></div> 
+
                 <div class="sintaxis">
                     <h3>interaccion con cmd</h3>
                     <p>esto es para cambiar espectos de la ventana de cmd.</p>
 
-                    <b>color</b><br>
-                    este comando sirve para interactuar con la interfas del cmd el primer simbolo indica el fondo y el segundo el color de las letras.
+                    
                     <ul>
+                        <li>
+                            <b><i class="fas fa-wrench"></i> color</b><br>
+                            este comando sirve para interactuar con la interfas del cmd el primer simbolo indica el fondo y el segundo el color de las letras.
+        
+                        </li>
                         <li>A = Verde claro</li>
                         <li>B = Aguamarina claro</li>
                         <li>C = Rojo claro</li>
